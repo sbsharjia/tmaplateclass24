@@ -1,0 +1,392 @@
+.logo-area img{
+	width: 110px;
+	margin-top: 10px;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header-area{
+    background-color: #e0e0e0;
+    position: relative;
+    z-index: 9;
+}
+.menu-area ul{
+	list-style: none;
+	align-content: flex-end;
+	justify-content: flex-end;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.menu-area ul li a{
+	padding: 10px 20px;
+	color: #111111;
+	line-height: 70px;
+	display: block;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+.menu-area ul li a::before{
+	content: '';
+	position: absolute;
+	left: 16px;
+    bottom: 0;
+	width: 0;
+	height: 3%;
+	background-color: #9d8fec;
+	transition: .4s;
+}
+.menu-area ul li:hover a::before{
+    width: 71%;
+}
+.active1{
+    color: #3763eb !important;
+    position: relative;
+}
+.active1::after{
+    content: '';
+    position: absolute;
+	left: 16px;
+    bottom: 0;
+	width: 71%;
+	height: 3%;
+	background-color: #9d8fec;
+    transition: .4s;
+}
+.header-btn{
+    margin-top: 20px;
+}
+.btn-btn a{
+	padding: 15px 25px;
+	border-radius: 50px;
+	border: 1px solid rgb(245, 239, 239);
+	color: #3763eb;
+    transition: .4s;
+    font-weight: 500;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.btn-btn a:hover{
+    color: #ffffff;
+}
+.btn-btn a::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: #6a89cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    border-radius: 50px;
+    z-index: -1;
+}
+.btn-btn a:hover::before{
+    width: 100%;
+  }
+
+/* start drop daown menu */
+.menu-area ul li{
+    position: relative;
+}
+.menu-area ul li ul{
+	position: absolute;
+	width: 248px;
+    height: 137px;
+	top: 100%;
+	left: 13px;
+	background-color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-area ul li ul li a::before{
+    width: 0%;
+    height: 0;
+}
+.menu-area ul li ul li{ 
+    display: block;
+}
+.menu-area ul li ul li a{
+	background-color: blue;
+	display: block;
+	padding: 0 21px;
+	width: 202px;
+	height: 67px;
+	margin: auto;
+	color: #ffffff;
+	line-height: 69px;
+	margin-top: 35px;
+}
+.menu-area ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+/* start banner area */
+.lead-content{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner-content h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+.banner-content p{
+	font-size: 16px;
+    color: #727272;
+}
+.btn-btn2 a{
+	padding: 16px 25px;
+	border-radius: 50px;
+	border: 1px solid transparent;
+	color: #ffffff;
+    background-color: #3763eb;
+    transition: .4s;
+    font-size: 17px;
+    font-weight: 600;
+}
+.btn-btn2 a:hover{
+    background-color: #ffffff;
+    border: 1px solid #3763eb;
+    color: #3763eb;
+}
+.banner-img img{
+    position: absolute;
+    top: -101px;
+    right: -140px;
+    width: 800px;
+    height: 800px;
+    z-index: 2;
+    border-radius: 50%;
+}
+.banner-section{
+    padding: 155px 0;
+    background-color: #edf6ff;
+
+}
+/* start service area */
+.service-area{
+    margin-bottom: 50px;
+}
+.service-heading h2{
+	font-size: 38px;
+	font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+}
+.service-heading h2::before{
+	content: '';
+	position: absolute;
+	top: 96px;
+	left: 6px;
+	width: 8%;
+	height: 3%;
+	background-color: #9d8fec;
+}
+.service-heading h4{
+	font-size: 15px;
+	color: #4a69bd;
+    margin-bottom: 20px;
+	font-weight: 400;
+}
+.service-heading p{
+	font-size: 15px;
+	width: 87%;
+	color: #727272;
+}
+.service-product:hover .service-icon::before{
+    background-color: #ffffff;
+    width: 80%;
+    transition: .4s;
+}
+.product-heading h3{
+    font-size: 19px;
+    margin: 20px 0;
+}
+.service-icon{
+	background-color: #3763eb;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50px 50px 50px 0;
+	color: #ffffff;
+	font-size: 25px;
+	margin-bottom: 20px;
+    position: relative;
+}
+.service-product:hover .service-icon{
+    background-color: #ffffff;
+    color: #3763eb;
+}
+.service-icon::before{
+	content: '';
+	position: absolute;
+	top: 83px;
+	left: 0;
+	width: 45%;
+	height: 4%;
+	background-color: #9d8fec;
+    transition: .4s;
+}
+.service-product{
+	background-color: #f6f9fc;
+	padding: 20px;
+	border-radius: 6px;
+	box-sizing: border-box;
+    transform: scaleY(1);
+    transition: .4s;
+}
+.service-product:hover{
+    background-color: #3763eb;
+    color: #ffffff;
+    transform: scale(1.02);
+}
+.product-details p{
+    font-size: 15px;
+    margin-top: 50px;
+}
+.item4{
+    margin-top: 60px;
+}
+.sp-img{
+    position: relative;
+}
+.sp-img img{
+	position: absolute;
+	top: 101px;
+	left: -56px;
+	z-index: -1;
+}
+/* start play area */
+.play-area{
+  background-image: url('image/video-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+    z-index: 1;
+}
+.play-area::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64,76,105, 0.8);
+    z-index: -1;
+}
+.play-heading h6{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.play-heading h2{
+	font-size: 28px;
+	font-weight: 500;
+    position: relative;
+    margin-bottom: 40px;
+}
+.play-heading h2::before{
+	content: '';
+	top: 45px;
+	left: 45%;
+	position: absolute;
+	width: 7%;
+	height: 4%;
+	background-color: #ffffff;
+}
+.play-heading p{
+	font-size: 15px;
+	width: 42%;
+	margin: auto;
+	font-weight: 400;
+}
+/* start paly button */
+.play-icon1{
+    margin-top: 100px;
+}
+.play{
+    display: inline-block;
+    background-color: #ffffff;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    transition: .4s;
+    color: #3763eb;
+    position: relative;
+}
+.play:hover{
+    color: #ffffff;
+    background-color: #3763eb;
+}
+.play::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    animation-name: one;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.play::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    animation-name: tow;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    animation-delay: .2s;
+}
+@keyframes one{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes tow{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
